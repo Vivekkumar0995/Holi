@@ -5,7 +5,7 @@ function randomColor() {
     return `rgb(${r}, ${g}, ${b})`; // Random color generation
 }
 
-for (let i = 0; i < 50; i++) { // Number of balloons
+for (let i = 0; i < 20; i++) { // Number of balloons
     let ballon = document.createElement("div"); // Create div
     let mheight = Math.floor(Math.random() * window.innerHeight); // Random height
     let mwidth = Math.floor(Math.random() * window.innerWidth); // Random width
