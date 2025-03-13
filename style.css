@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #C51E3A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    min-height: 70vh;
+}
+.btn{
+    height: 100px;
+    width: 300px;
+    font-size: 50px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 13px rgb(46, 44, 43);
+    margin: 120px;
+}
+
+.image{
+    height: 300px;
+    animation: move  0.8s cubic-bezier(0.6, 0.57, 0.02, 0.1) infinite alternate;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes move{
+    from{
+        transform: translateY(-80px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
